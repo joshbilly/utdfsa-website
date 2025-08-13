@@ -1,4 +1,6 @@
 import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 import "./global.css";
 
 import { Toaster } from "@/components/ui/toaster";
@@ -19,6 +21,9 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      {/* Vercel performance & analytics */}
+      <SpeedInsights />
+      <Analytics />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
