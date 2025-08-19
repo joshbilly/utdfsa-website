@@ -380,14 +380,17 @@ export default function Media() {
           Join the Media Team!
         </button>
 
-        <button
+        <a
+          href="https://docs.google.com/document/d/1lziZZL06YktACAXfUpGCUYVpTqC2DNK43FYqAtzzBx8/edit?tab=t.0"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-white font-fugaz text-lg md:text-xl lg:text-[24px] text-center underline hover:opacity-80 transition-opacity"
           style={{
             textShadow: '0 4px 4px rgba(0, 0, 0, 0.25)'
           }}
         >
           UTD FSA Photo Album &gt;
-        </button>
+        </a>
       </section>
 
       {/* Media Carousel */}

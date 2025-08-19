@@ -152,14 +152,14 @@ export default function Index() {
         style={{
           backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/f122bc18c674318d77853402b51df7cfcfa2c3dc?width=3024')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center -12px',
+          backgroundPosition: '35% -10px',
           backgroundRepeat: 'no-repeat'
         }}
       >
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/6c659566d805b620adf05e201361ffabc2b036ea?width=1428"
           alt="FSA Logo"
-          className="w-[200px] h-[182px] md:w-[300px] md:h-[273px] lg:w-[500px] lg:h-[455px] object-contain"
+          className="w-[250px] h-[227px] md:w-[400px] md:h-[364px] lg:w-[600px] lg:h-[546px] object-contain"
           style={{
             filter: 'drop-shadow(5px 9px 4px rgba(51, 43, 43, 0.73))'
           }}
@@ -227,8 +227,11 @@ export default function Index() {
           </span>
         </p>
         
-        <button 
-          className="relative w-[160px] h-[45px] rounded-[50px] text-white font-fugaz text-lg lg:text-[24px] text-center hover:opacity-90 transition-opacity"
+        <a
+          href="https://forms.utdfsa.com/membership"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative w-[160px] h-[45px] rounded-[50px] text-white font-fugaz text-lg lg:text-[24px] text-center hover:opacity-90 transition-opacity flex items-center justify-center"
           style={{
             background: '#27688E',
             boxShadow: '3px 4px 4px 0 rgba(0, 0, 0, 0.25)',
@@ -236,7 +239,7 @@ export default function Index() {
           }}
         >
           Join us!
-        </button>
+        </a>
       </section>
 
       <Carousel />
@@ -270,30 +273,51 @@ export default function Index() {
             </div>
 
             <div className="flex items-center gap-8 lg:gap-[66px]">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/ad96bfff17086cb0a84d4b3eb8eb419630db7aa4?width=187"
-                alt="TikTok"
-                className="w-[60px] h-[60px] lg:w-[93px] lg:h-[93px]"
-                style={{
-                  filter: 'drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.25))'
-                }}
-              />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/40c58be09ec528db9faa07abc6274e96372916eb?width=187"
-                alt="Instagram"
-                className="w-[60px] h-[60px] lg:w-[93px] lg:h-[93px]"
-                style={{
-                  filter: 'drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.25))'
-                }}
-              />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/f91b25a5495d599169f3d1a78ee55f6d9f4c1ec0?width=188"
-                alt="YouTube"
-                className="w-[60px] h-[68px] lg:w-[94px] lg:h-[106px]"
-                style={{
-                  filter: 'drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.25))'
-                }}
-              />
+              <a
+                href="https://www.tiktok.com/@utdfsa?_t=ZP-8yyCMP5s1Gw&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/ad96bfff17086cb0a84d4b3eb8eb419630db7aa4?width=187"
+                  alt="TikTok"
+                  className="w-[60px] h-[60px] lg:w-[93px] lg:h-[93px]"
+                  style={{
+                    filter: 'drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.25))'
+                  }}
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/fsautd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/40c58be09ec528db9faa07abc6274e96372916eb?width=187"
+                  alt="Instagram"
+                  className="w-[60px] h-[60px] lg:w-[93px] lg:h-[93px]"
+                  style={{
+                    filter: 'drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.25))'
+                  }}
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/@fsautd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/f91b25a5495d599169f3d1a78ee55f6d9f4c1ec0?width=188"
+                  alt="YouTube"
+                  className="w-[60px] h-[68px] lg:w-[94px] lg:h-[106px]"
+                  style={{
+                    filter: 'drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.25))'
+                  }}
+                />
+              </a>
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/1a261b7bdcf9d0171ba217a4906374189e1ebe90?width=188"
                 alt="Discord"

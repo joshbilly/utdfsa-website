@@ -27,8 +27,11 @@ export default function WhoAreWe() {
       </p>
 
       {/* Join us button */}
-      <button
-        className="relative w-[160px] h-[45px] sm:w-[180px] sm:h-[50px] lg:w-[207px] lg:h-[58px] rounded-[50px] text-white font-fugaz text-lg sm:text-xl lg:text-2xl xl:text-[36px] text-center hover:opacity-90 transition-opacity"
+      <a
+        href="https://forms.utdfsa.com/membership"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative w-[160px] h-[45px] sm:w-[180px] sm:h-[50px] lg:w-[207px] lg:h-[58px] rounded-[50px] text-white font-fugaz text-lg sm:text-xl lg:text-2xl xl:text-[36px] text-center hover:opacity-90 transition-opacity flex items-center justify-center"
         style={{
           background: '#27688E',
           boxShadow: '3px 4px 4px 0 rgba(0, 0, 0, 0.25)',
@@ -36,7 +39,7 @@ export default function WhoAreWe() {
         }}
       >
         Join us!
-      </button>
+      </a>
     </section>
   );
 }

@@ -13,6 +13,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PlaceholderPage from "./pages/PlaceholderPage";
 import Media from "./pages/Media";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -29,7 +30,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
 
           {/* FSA Navigation Pages */}
-          <Route path="/about" element={<PlaceholderPage />} />
+          <Route path="/about" element={<About />} />
           <Route path="/resources" element={<PlaceholderPage />} />
           <Route path="/sports" element={<PlaceholderPage />} />
           <Route path="/dance" element={<PlaceholderPage />} />
