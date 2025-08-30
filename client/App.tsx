@@ -14,6 +14,12 @@ import NotFound from "./pages/NotFound";
 import PlaceholderPage from "./pages/PlaceholderPage";
 import Media from "./pages/Media";
 import About from "./pages/About";
+import Pamilyas from "./pages/Pamilyas";
+import Dance from "./pages/Dance";
+import Faq from "./pages/Faq";
+import Goodphil from "./pages/Goodphil";
+import Events from "./pages/Events";
+import Membership from "./pages/Membership";
 
 const queryClient = new QueryClient();
 
@@ -33,13 +39,13 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/resources" element={<PlaceholderPage />} />
           <Route path="/sports" element={<PlaceholderPage />} />
-          <Route path="/dance" element={<PlaceholderPage />} />
-          <Route path="/goodphil" element={<PlaceholderPage />} />
-          <Route path="/membership" element={<PlaceholderPage />} />
+          <Route path="/dance" element={<Dance />} />
+          <Route path="/goodphil" element={<Goodphil />} />
+          <Route path="/membership" element={<Membership />} />
           <Route path="/media" element={<Media />} />
-          <Route path="/events" element={<PlaceholderPage />} />
-          <Route path="/pamilyas" element={<PlaceholderPage />} />
-          <Route path="/faq" element={<PlaceholderPage />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/pamilyas" element={<Pamilyas />} />
+          <Route path="/faq" element={<Faq />} />
 
           {/* Footer Pages */}
           <Route path="/newsletters" element={<PlaceholderPage />} />
