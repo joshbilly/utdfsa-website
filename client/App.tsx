@@ -20,6 +20,7 @@ import Faq from "./pages/Faq";
 import Goodphil from "./pages/Goodphil";
 import Events from "./pages/Events";
 import Membership from "./pages/Membership";
+import Newsletter from "./pages/Newsletter";
 
 const queryClient = new QueryClient();
 
@@ -48,7 +49,7 @@ const App = () => (
           <Route path="/faq" element={<Faq />} />
 
           {/* Footer Pages */}
-          <Route path="/newsletters" element={<PlaceholderPage />} />
+          <Route path="/newsletters" element={<Newsletter />} />
           <Route path="/meeting-slides" element={<PlaceholderPage />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

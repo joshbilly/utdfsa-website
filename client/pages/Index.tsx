@@ -231,7 +231,7 @@ export default function Index() {
       {/* Footer */}
       <footer className="relative w-full">
         {/* Star background - positioned behind content and defines the height */}
-        <div className="relative flex items-center justify-center overflow-hidden">
+        <div className="relative flex items-center justify-center overflow-hidden min-h-[400px] sm:min-h-[450px] lg:min-h-[500px]">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/3f6fa9480e49eb1d5658aa04b4c80b272c3f3961?width=2354"
             alt="UTD FSA Cultural Activities and Events"
@@ -239,21 +239,21 @@ export default function Index() {
           />
 
           {/* Footer content - absolutely positioned over star */}
-          <div className="absolute inset-0 z-10 w-full flex flex-col items-center justify-end gap-8 lg:gap-16 px-4 pb-8 lg:pb-12">
-            <h3 className="text-white font-fugaz text-2xl lg:text-[36px] text-center drop-shadow-lg -mt-4 lg:-mt-8">
+          <div className="absolute inset-0 z-10 w-full flex flex-col items-center justify-center gap-6 sm:gap-8 lg:gap-16 px-4 py-12 sm:py-16 lg:py-20">
+            <h3 className="text-white font-fugaz text-2xl lg:text-[36px] text-center drop-shadow-lg">
               QUICK LINKS
             </h3>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-24">
-              <span className="text-white font-fugaz text-lg lg:text-[20px] text-center underline drop-shadow-lg">
+            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 lg:gap-24">
+              <Link to="/newsletters" className="text-white font-fugaz text-lg lg:text-[28px] text-center underline drop-shadow-lg hover:opacity-80 transition-opacity">
                 NEWSLETTERS
-              </span>
-              <span className="text-white font-fugaz text-lg lg:text-[20px] text-center underline drop-shadow-lg">
+              </Link>
+              <span className="text-white font-fugaz text-lg lg:text-[28px] text-center underline drop-shadow-lg">
                 GEN MEETING SLIDES
               </span>
-              <span className="text-white font-fugaz text-lg lg:text-[20px] text-center underline drop-shadow-lg">
+              <Link to="/faq" className="text-white font-fugaz text-lg lg:text-[28px] text-center underline drop-shadow-lg hover:opacity-80 transition-opacity">
                 FAQ
-              </span>
+              </Link>
             </div>
 
             <div className="flex items-center gap-8 lg:gap-[66px]">

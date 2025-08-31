@@ -85,26 +85,17 @@ export default function Events() {
         color: "#87A26C"
       }
     },
-    { 
-      date: "12", 
-      day: 12, 
+    {
+      date: "12",
+      day: 12,
       isCurrentMonth: true,
       event: {
-        title: "VISION BOARD NIGHT",
-        organizer: "Lauren Siacunco",
-        color: "#D8FFE3"
-      }
-    },
-    { 
-      date: "13", 
-      day: 13, 
-      isCurrentMonth: true,
-      event: {
-        title: "BACK-TO-SCHOOL SWAGAPINO BASH",
+        title: "VISION BOARD NIGHT\n\nSWAGAPINO PARTY",
         organizer: "Buy tickets online!",
         color: "#FFDEE3"
       }
     },
+    { date: "13", day: 13, isCurrentMonth: true },
     { date: "14", day: 14, isCurrentMonth: true },
     { 
       date: "15", 
@@ -330,7 +321,7 @@ export default function Events() {
                 textShadow: '7px 4px 4px rgba(0, 0, 0, 0.25)'
               }}
             >
-              <span className="font-bold">September 13, 2025</span> | Back-to-School Bash - Ticket Purchase Form
+              <span className="font-bold">September 12, 2025</span> | Swagapino Party - Ticket Purchase Form
             </a>
           </section>
 
@@ -385,7 +376,7 @@ export default function Events() {
                       
                       {dayData.event && (
                         <div className="flex flex-col gap-1">
-                          <div className="text-black font-inter text-sm font-bold leading-tight">
+                          <div className="text-black font-inter text-sm font-bold leading-tight whitespace-pre-line">
                             {dayData.event.title}
                           </div>
                           <div className="text-black font-inter text-xs opacity-60">
