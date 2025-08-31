@@ -32,7 +32,16 @@ export default function Events() {
         color: "#459C79"
       }
     },
-    { date: "4", day: 4, isCurrentMonth: true },
+    {
+      date: "4",
+      day: 4,
+      isCurrentMonth: true,
+      event: {
+        title: "COCO SHRIMP FUNDRAISER",
+        organizer: "Ariana Halili",
+        color: "#FFB3BA"
+      }
+    },
     { 
       date: "5", 
       day: 5, 
@@ -54,7 +63,16 @@ export default function Events() {
       }
     },
     { date: "7", day: 7, isCurrentMonth: true },
-    { date: "8", day: 8, isCurrentMonth: true },
+    {
+      date: "8",
+      day: 8,
+      isCurrentMonth: true,
+      event: {
+        title: "JUNBI MATCHA FUNDRAISER",
+        organizer: "Ariana Halili",
+        color: "#E8DAFF"
+      }
+    },
     { date: "9", day: 9, isCurrentMonth: true },
     { date: "10", day: 10, isCurrentMonth: true },
     { 
