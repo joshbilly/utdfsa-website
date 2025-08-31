@@ -8,87 +8,87 @@ export default function About() {
     {
       name: "DJ Sagutaon",
       title: "President",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/0d1a100d1f021471c71de6978d1429c04b84153e?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Ff2f068e88f214c65884f739bc97f51c5?format=webp&width=800"
     },
     {
-      name: "Leo dos Remedios", 
+      name: "Leo dos Remedios",
       title: "Vice President",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F9cc481f1892b4942a1577bda47d2d13e?format=webp&width=800"
     },
     {
       name: "Genna Ibarra",
-      title: "Secretary", 
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      title: "Secretary",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Fe3950049899a47a6a55c08364cde58f2?format=webp&width=800"
     },
     {
       name: "Renzo Artates",
       title: "Treasurer",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Fdd601b0af5cb47acaaf2b65e26f5caaf?format=webp&width=800"
     },
     {
       name: "Czar Nonot",
       title: "Board Advisor",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Fde36d888932c45ff8fd245553172a960?format=webp&width=800"
     },
     {
       name: "Livy Ker",
       title: "Event Coordinator",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F2477e76c1b0d479a93f45410d49a1eb1?format=webp&width=800"
     },
     {
       name: "Lance Martinez",
       title: "Historian",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Fca68ec4b2a054f999a027a21a414d927?format=webp&width=800"
     },
     {
       name: "Lauren Siacunco",
       title: "Marketing Chair",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Fdd9a95ac9ed347e3b96d5f215a8db037?format=webp&width=800"
     },
     {
       name: "Michael Dao",
       title: "Graphics Chair",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F82ef0d71d1c14ce5ae44f4bb96062654?format=webp&width=800"
     },
     {
       name: "Josh Eromonsele",
       title: "Pamilya Chair, Webmaster",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Fbf0aa87a09ee4a1a90afcdcca6092630?format=webp&width=800"
     },
     {
       name: "Richard Aryata",
       title: "Sports Coordinator",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F000212edb6a7497db16eef65d8e9b52e?format=webp&width=800"
     },
     {
       name: "Phuc Tran",
       title: "Sports Coordinator",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F70ce64b70bb944dea3c20d1f326144bf?format=webp&width=800"
     },
     {
       name: "Patrick Enerio",
       title: "Cultural Ambassador",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F1adc67912e314e8a8c5e609f5cba5276?format=webp&width=800"
     },
     {
       name: "Tristan Casillan",
       title: "Cultural Director",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F8bce04fb12894e10a5dcbb620bdeb872?format=webp&width=800"
     },
     {
       name: "Cianna Rodriguez",
       title: "Modern Director",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F7ee213f34df042a68e68fc16f0ca3d26?format=webp&width=800"
     },
     {
       name: "Simon Choi",
       title: "Philanthropy Chair",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F285c5947f165436d9ec3e50b23d12e2c?format=webp&width=800"
     },
     {
       name: "Ariana Halili",
       title: "Fundraising Chair",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6fca64cea6f73d4ca5f1aa119eab3e68488125ce?width=804"
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F2dfaa3d5075641f2b7375d1645193fa1?format=webp&width=800"
     }
   ];
 
@@ -171,19 +171,6 @@ export default function About() {
         <div className="w-full h-px bg-transparent shadow-[0_4px_6px_0_rgba(0,0,0,0.75)]"></div>
       </header>
 
-      {/* Background Images */}
-      <div className="relative">
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/f063c56b82dc8f84afe59c71505ca9db48067b84?width=3024"
-          alt=""
-          className="w-full h-[60px] md:h-[80px] lg:h-[100px] object-cover"
-        />
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/58e9750f08d381de9d5148cf7b31aaf8a723ab2c?width=3024"
-          alt=""
-          className="w-full h-[60px] md:h-[80px] lg:h-[100px] object-cover"
-        />
-      </div>
 
       {/* Hero Section */}
       <section className="relative flex flex-col items-center justify-center py-12 px-4">
@@ -230,14 +217,6 @@ export default function About() {
         </p>
       </section>
 
-      {/* Background Images */}
-      <div className="relative">
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/384f6997e1ad7ff70338db1c4399f05c6e1f6dc9?width=3024"
-          alt=""
-          className="w-full h-[300px] md:h-[400px] lg:h-[600px] object-cover"
-        />
-      </div>
 
       {/* Officers Section */}
       <section className="py-12 px-4">
@@ -276,24 +255,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Background Images */}
-      <div className="relative">
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/05b2a4a0f6d4c11db4d9642b7c2a54f20c1c6870?width=3024"
-          alt=""
-          className="w-full h-[300px] md:h-[400px] lg:h-[600px] object-cover"
-        />
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/4635b20f4a8493a1428c82b3f6da054d94e898c6?width=3021"
-          alt=""
-          className="w-full h-[300px] md:h-[400px] lg:h-[600px] object-cover"
-        />
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/30a187da7072c3b30228cb8f1b651abb17f21a95?width=3022"
-          alt=""
-          className="w-full h-[300px] md:h-[400px] lg:h-[700px] object-cover"
-        />
-      </div>
 
       {/* Past Officers Archive */}
       <section className="py-12 px-4 text-center">
