@@ -250,7 +250,7 @@ export default function Index() {
         <div className="relative flex items-center justify-center overflow-hidden">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/3f6fa9480e49eb1d5658aa04b4c80b272c3f3961?width=2354"
-            alt=""
+            alt="UTD FSA Cultural Activities and Events"
             className="w-full max-w-[500px] lg:max-w-[750px] h-auto object-contain opacity-70 lg:opacity-60"
           />
 
@@ -330,12 +330,6 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Credits bar */}
-        <div className="w-full h-[21px] bg-[#42624D] flex items-center justify-center">
-          <span className="text-white font-fugaz text-xs lg:text-sm text-center">
-            2025-2026 UTD FSA PRESIDENT DJ SAGUTAON
-          </span>
-        </div>
       </footer>
       </div>
     </div>

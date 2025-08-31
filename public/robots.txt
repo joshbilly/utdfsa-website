@@ -1,3 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://utdfsa.org/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Specific bot permissions
 User-agent: Googlebot
 Allow: /
 
@@ -10,5 +20,6 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Block admin or private areas if any exist in the future
+# Disallow: /admin/
+# Disallow: /private/

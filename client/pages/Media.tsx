@@ -396,12 +396,6 @@ export default function Media() {
       {/* Media Carousel */}
       <MediaCarousel />
 
-      {/* Footer Credits */}
-      <div className="w-full h-[21px] bg-[#42624D] flex items-center justify-center">
-        <span className="text-white font-fugaz text-xs lg:text-sm text-center">
-          2025-2026 UTD FSA PRESIDENT DJ SAGUTAON
-        </span>
-      </div>
     </div>
   );
 }

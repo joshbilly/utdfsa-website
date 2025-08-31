@@ -1,0 +1,26 @@
+{
+  "name": "UTD Filipino Student Association",
+  "short_name": "UTD FSA",
+  "description": "The Filipino Student Association at the University of Texas at Dallas promotes unity, inclusivity, and Filipino culture through dance, sports, community events, and cultural programs since 2001.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D2718",
+  "theme_color": "#2F8D57",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "social", "lifestyle"],
+  "lang": "en-US"
+}
