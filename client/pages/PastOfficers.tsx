@@ -249,20 +249,20 @@ export default function PastOfficers() {
                 </button>
 
                 {/* Dropdown Content */}
-                <div className={`transition-all duration-500 ease-in-out ${isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
+                <div className={`transition-all duration-500 ease-in-out ${isExpanded ? 'max-h-none opacity-100' : 'max-h-0 opacity-0'} ${isExpanded ? 'overflow-visible' : 'overflow-hidden'}`}>
                   <div className="px-6 pb-8 lg:px-8">
                     <div className="w-full h-px bg-white opacity-20 mb-8"></div>
 
                     {/* Officers Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
                       {yearData.officers.map((officer, officerIndex) => (
                         <div
                           key={officerIndex}
-                          className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300"
+                          className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 md:p-6 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 min-h-[120px] flex items-center"
                         >
-                          <div className="text-center">
+                          <div className="text-center w-full">
                             <h3
-                              className="text-white font-fugaz text-lg md:text-xl mb-2"
+                              className="text-white font-fugaz text-base md:text-lg lg:text-xl mb-2 leading-tight"
                               style={{
                                 textShadow: '0 4px 4px rgba(0, 0, 0, 0.25)'
                               }}
@@ -270,7 +270,7 @@ export default function PastOfficers() {
                               {officer.position}
                             </h3>
                             <p
-                              className="text-white font-gabarito text-base md:text-lg leading-relaxed"
+                              className="text-white font-gabarito text-sm md:text-base lg:text-lg leading-relaxed"
                               style={{
                                 textShadow: '0 2px 2px rgba(0, 0, 0, 0.25)'
                               }}
