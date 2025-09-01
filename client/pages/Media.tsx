@@ -353,8 +353,11 @@ export default function Media() {
           Led by our Historian and Marketing Chair, the UTD FSA Media Team is in charge of capturing picture perfect moments of socials, events, and memories throughout the year! Whether you're an experienced photographer/videographer/editor or a beginner stepping into the realm of photography, we welcome everybody in joining us create an archive of the beautiful memories made in FSA!
         </p>
 
-        <button
-          className="relative w-[300px] md:w-[400px] lg:w-[400px] h-[45px] md:h-[50px] lg:h-[50px] rounded-[50px] text-white font-fugaz text-lg md:text-xl lg:text-[24px] text-center hover:opacity-90 transition-opacity"
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfe2djsZoFlOq0v-_mWbLxIxKE4nP5GzLpkGsJsjHkQpufKWA/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative w-[300px] md:w-[400px] lg:w-[400px] h-[45px] md:h-[50px] lg:h-[50px] rounded-[50px] text-white font-fugaz text-lg md:text-xl lg:text-[24px] text-center hover:opacity-90 transition-opacity flex items-center justify-center"
           style={{
             background: '#27688E',
             boxShadow: '3px 4px 4px 0 rgba(0, 0, 0, 0.25)',
@@ -362,7 +365,7 @@ export default function Media() {
           }}
         >
           Join the Media Team!
-        </button>
+        </a>
 
         <a
           href="https://docs.google.com/document/d/1lziZZL06YktACAXfUpGCUYVpTqC2DNK43FYqAtzzBx8/edit?tab=t.0"
