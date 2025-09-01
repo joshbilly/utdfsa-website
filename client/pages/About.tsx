@@ -254,14 +254,15 @@ export default function About() {
 
       {/* Past Officers Archive */}
       <section className="py-12 px-4 text-center">
-        <button
+        <Link
+          to="/past-officers"
           className="text-white font-fugaz text-xl md:text-2xl lg:text-3xl underline hover:opacity-80 transition-opacity"
           style={{
             textShadow: '8px 4px 4px rgba(0, 0, 0, 0.25)'
           }}
         >
           PAST OFFICERS ARCHIVE &gt;
-        </button>
+        </Link>
       </section>
 
     </div>

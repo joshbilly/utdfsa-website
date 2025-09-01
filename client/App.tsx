@@ -21,6 +21,7 @@ import Goodphil from "./pages/Goodphil";
 import Events from "./pages/Events";
 import Membership from "./pages/Membership";
 import Newsletter from "./pages/Newsletter";
+import PastOfficers from "./pages/PastOfficers";
 
 const queryClient = new QueryClient();
 
@@ -51,6 +52,7 @@ const App = () => (
           {/* Footer Pages */}
           <Route path="/newsletters" element={<Newsletter />} />
           <Route path="/meeting-slides" element={<PlaceholderPage />} />
+          <Route path="/past-officers" element={<PastOfficers />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
