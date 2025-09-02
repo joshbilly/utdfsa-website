@@ -294,6 +294,37 @@ export default function Events() {
 
 
 
+          {/* Party Ticket Section */}
+          <section className="w-full max-w-4xl text-center">
+            <div className="bg-gradient-to-r from-pink-600/80 to-purple-600/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border-2 border-pink-400/50 shadow-xl">
+              <h2
+                className="text-white font-fugaz text-xl lg:text-[32px] mb-4"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                🎉 Swagapino Party - September 12th
+              </h2>
+              <p
+                className="text-white font-gabarito text-base lg:text-[18px] mb-6 leading-relaxed"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                The biggest FSA party of the semester! Don't miss out on an unforgettable night of music, dancing, and amazing vibes.
+              </p>
+              <a
+                href="https://party.utdfsa.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-fugaz text-lg lg:text-xl px-8 py-4 rounded-full hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                <span>🎫</span>
+                <span>Buy Party Tickets Now!</span>
+              </a>
+            </div>
+          </section>
+
           {/* Calendar Section */}
           <section id="calendar" className="w-full max-w-7xl space-y-8">
             <div className="text-center space-y-4">
