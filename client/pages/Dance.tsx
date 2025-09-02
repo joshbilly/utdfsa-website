@@ -140,27 +140,27 @@ export default function Dance() {
 
   // Sample images for carousels
   const spiritImages = [
-    "https://api.builder.io/api/v1/image/assets/TEMP/8f52f831cf264ca5216937896516a54cd4f3dca5?width=722",
-    "https://api.builder.io/api/v1/image/assets/TEMP/3cd28a84e38699c0160ae3470566eca18378aa21?width=1042",
-    "https://api.builder.io/api/v1/image/assets/TEMP/168e3567e55db9944e568d8453a69781b1e5ec19?width=1042",
-    "https://api.builder.io/api/v1/image/assets/TEMP/2a24daaaec56d08001af321995f5f96e8108a2fd?width=1362",
-    "https://api.builder.io/api/v1/image/assets/TEMP/0dc2a94969ff632c429b75ccb2b4570029114e21?width=722"
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F92624111092447a1a57c00c54bbd4839?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F934dc0dc689042e2a7be198d2eae530c?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F15b993d2ad0e4d26a5238f375e336968?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Faa06e521eb4e4974b091fc10320e2de9?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F7cc74684e0564f88980775e502f30c17?format=webp&width=800"
   ];
 
   const culturalImages = [
-    "https://api.builder.io/api/v1/image/assets/TEMP/31cf8dfd8a3d3a626bdb2fe07319589bdf1933ef?width=722",
-    "https://api.builder.io/api/v1/image/assets/TEMP/5b8abccdc732263dab9cfde76d9689c2e7f028a3?width=1042",
-    "https://api.builder.io/api/v1/image/assets/TEMP/39bf68a2106d77e03a4c5fd8931bbaeb47857569?width=1042",
-    "https://api.builder.io/api/v1/image/assets/TEMP/68da459196193768fac1ad60297a649ad661f7a3?width=1362",
-    "https://api.builder.io/api/v1/image/assets/TEMP/1d92b6b07b1cab4e520d6626d415bb0b47a2b009?width=722"
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F256bf3fc12e7406c831eda8ec18bbf52?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Fa1eaac669dab452598785d5afc0119e7?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F5904f248d5be4031b542d93d4219f109?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F25d64c6e784d4728be76ebb5cec4bbf9?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F39504e2caa134aeea2a26fe3c30301a4?format=webp&width=800"
   ];
 
   const modernImages = [
-    "https://api.builder.io/api/v1/image/assets/TEMP/41cab6e5b4a1bb9f7d4daf34e5554e8f234d6967?width=722",
-    "https://api.builder.io/api/v1/image/assets/TEMP/8f56e12ac4a459deb20c62b8c620bd9cca95cfb3?width=1042",
-    "https://api.builder.io/api/v1/image/assets/TEMP/9656e3cba6e2cb13a4d91c47e685d7e604253f36?width=1042",
-    "https://api.builder.io/api/v1/image/assets/TEMP/9b2fdd5593ce385174b1359e356b0c9acbb3bc58?width=1362",
-    "https://api.builder.io/api/v1/image/assets/TEMP/b68221eeccb4a6c4f8034afcd8189ae4af0b436b?width=722"
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Fb7bb5a48506d499eb880f886e7a8509a?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F116db6514a3d40d9ad474dcc5a7daa9a?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F1b085aafa3fa4917a8455a00f22195e7?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F670ba7e07ffb4d6aa1f1df040da757de?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Fbdc00de098654f51aac837a17cc57757?format=webp&width=800"
   ];
 
   return (
@@ -276,183 +276,341 @@ export default function Dance() {
           </section>
 
           {/* Introduction */}
-          <section className="w-full max-w-5xl text-center">
-            <p 
-              className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-              style={{
-                textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-              }}
-            >
-              UTD FSA has three dance teams: Spirit, Cultural, and Modern! Find out more about our teams and what it means to be a part of each one.
-            </p>
+          <section className="w-full max-w-5xl text-center relative">
+            <div className="relative bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-white border-opacity-20">
+              <p
+                className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                UTD FSA has three dance teams: <span className="font-bold text-yellow-300">Spirit</span>, <span className="font-bold text-blue-300">Cultural</span>, and <span className="font-bold text-pink-300">Modern</span>! Find out more about our teams and what it means to be a part of each one.
+              </p>
+            </div>
           </section>
 
           {/* SPIRIT Section */}
-          <section className="w-full max-w-6xl space-y-8 lg:space-y-12">
-            <div className="text-center space-y-4 lg:space-y-6">
-              <h2 
-                className="text-white font-fugaz text-2xl lg:text-[40px] underline"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                SPIRIT
-              </h2>
-              <p 
-                className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed max-w-5xl mx-auto"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                Spirit is a performance category in Goodphil that combines school spirit, recent pop culture trends, & Filipino/FSA culture! Each school creates a performance that ranges from chants and skits while representing their FSA's heart and identity to ignite the crowd.
-              </p>
-            </div>
+          <section className="w-full max-w-6xl space-y-8 lg:space-y-12 relative">
+            {/* Decorative background element */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-yellow-400/10 to-orange-500/10 rounded-3xl -z-10"></div>
 
-            <DanceCarousel images={spiritImages} />
+            <div className="relative bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-yellow-300 border-opacity-30">
+              <div className="text-center space-y-4 lg:space-y-6">
+                <div className="relative inline-block">
+                  <h2
+                    className="text-white font-fugaz text-3xl lg:text-[48px] relative z-10"
+                    style={{
+                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                    }}
+                  >
+                    <span className="text-yellow-300">SPIRIT</span>
+                  </h2>
+                  <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
+                </div>
 
-            <div className="text-center">
-              <h3
-                className="text-white font-fugaz text-xl lg:text-[40px] underline"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                WATCH OUR GOODPHIL 2025 SPIRIT SET!
-              </h3>
-              <div className="w-full max-w-3xl mx-auto mt-6">
-                <video
-                  controls
-                  className="w-full h-[200px] md:h-[300px] lg:h-[408px] rounded-[28px] object-cover"
+                <p
+                  className="text-white font-gabarito text-lg lg:text-[28px] leading-relaxed max-w-5xl mx-auto"
                   style={{
-                    backgroundColor: '#1a1a1a'
+                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
                   }}
                 >
-                  <source src="/spirit dance.mp4" type="video/mp4" />
-                  <source src="/spirit dance.mov" type="video/quicktime" />
-                  <source src="/spirit dance.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
+                  Spirit is a performance category in Goodphil that combines school spirit, recent pop culture trends, & Filipino/FSA culture! Each school creates a performance that ranges from chants and skits while representing their FSA's heart and identity to ignite the crowd.
+                </p>
+              </div>
+
+              <div className="mt-12">
+                <DanceCarousel images={spiritImages} />
+              </div>
+
+              <div className="text-center mt-12">
+                <div className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl p-8 border border-yellow-300 border-opacity-30">
+                  <h3
+                    className="text-white font-fugaz text-xl lg:text-[36px] mb-6"
+                    style={{
+                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                    }}
+                  >
+                    🎬 WATCH OUR GOODPHIL 2025 SPIRIT SET!
+                  </h3>
+                  <div className="w-full max-w-3xl mx-auto">
+                    <div className="relative rounded-[28px] overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                      <iframe
+                        src="https://www.youtube.com/embed/02wg-b1WghI?start=1"
+                        title="UTD FSA Spirit Team - Goodphil 2025"
+                        className="w-full h-[200px] md:h-[300px] lg:h-[408px]"
+                        style={{
+                          backgroundColor: '#1a1a1a'
+                        }}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Spirit Fun Fact */}
+              <div className="text-center mt-12">
+                <div className="relative bg-gradient-to-r from-yellow-400/20 via-orange-500/20 to-yellow-600/20 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-yellow-300 border-opacity-30 max-w-2xl mx-auto transform hover:scale-105 transition-all duration-300">
+                  {/* Decorative elements */}
+                  <div className="absolute top-4 left-4 text-4xl">🥇</div>
+                  <div className="absolute top-4 right-4 text-4xl">✨</div>
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-4xl">🎉</div>
+
+                  <div className="relative z-10">
+                    <h3
+                      className="text-white font-fugaz text-2xl lg:text-[40px] mb-4"
+                      style={{
+                        textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                      }}
+                    >
+                      🎊 SPIRIT CHAMPIONS 🎊
+                    </h3>
+                    <p
+                      className="text-white font-gabarito text-xl lg:text-[36px] font-bold"
+                      style={{
+                        textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                      }}
+                    >
+                      We placed <span className="text-yellow-300 text-2xl lg:text-[42px]">1st</span> this year!
+                    </p>
+                    <div className="mt-6 flex justify-center gap-4">
+                      <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+                      <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse delay-75"></div>
+                      <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse delay-150"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
           {/* CULTURAL Section */}
-          <section className="w-full max-w-6xl space-y-8 lg:space-y-12">
-            <div className="text-center space-y-4 lg:space-y-6">
-              <h2 
-                className="text-white font-fugaz text-2xl lg:text-[40px] underline"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                CULTURAL
-              </h2>
-              <p 
-                className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed max-w-5xl mx-auto"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                UTD FSA's Cultural team, also known as UTD Pamana, competes at Isang Mahal and Goodphil! Pamana aims to promote and celebrate Filipino heritage through dance by delivering impactful, storytelling performances.
-                <br />
-                <br />
-                Instagram: <span className="underline">@utdpamana</span>
-              </p>
-            </div>
+          <section className="w-full max-w-6xl space-y-8 lg:space-y-12 relative">
+            {/* Decorative background element */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-400/10 to-purple-500/10 rounded-3xl -z-10"></div>
 
-            <DanceCarousel images={culturalImages} />
+            <div className="relative bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-blue-300 border-opacity-30">
+              <div className="text-center space-y-4 lg:space-y-6">
+                <div className="relative inline-block">
+                  <h2
+                    className="text-white font-fugaz text-3xl lg:text-[48px] relative z-10"
+                    style={{
+                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                    }}
+                  >
+                    <span className="text-blue-300">CULTURAL</span>
+                  </h2>
+                  <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"></div>
+                </div>
 
-            <div className="text-center">
-              <h3
-                className="text-white font-fugaz text-xl lg:text-[40px] underline"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                WATCH OUR GOODPHIL 2025 CULTURAL SET!
-              </h3>
-              <div className="w-full max-w-3xl mx-auto mt-6">
-                <video
-                  controls
-                  className="w-full h-[200px] md:h-[300px] lg:h-[408px] rounded-[28px] object-cover"
+                <p
+                  className="text-white font-gabarito text-lg lg:text-[28px] leading-relaxed max-w-5xl mx-auto"
                   style={{
-                    backgroundColor: '#1a1a1a'
+                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
                   }}
                 >
-                  <source src="/culture dance.mp4" type="video/mp4" />
-                  <source src="/culture dance.mov" type="video/quicktime" />
-                  <source src="/culture dance.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
+                  UTD FSA's Cultural team, also known as <span className="font-bold text-blue-300">UTD Pamana</span>, competes at Isang Mahal and Goodphil! Pamana aims to promote and celebrate Filipino heritage through dance by delivering impactful, storytelling performances.
+                </p>
+
+                {/* Instagram link with better styling */}
+                <div className="mt-6">
+                  <a
+                    href="https://instagram.com/utdpamana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-fugaz text-lg lg:text-xl px-6 py-3 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  >
+                    <span>📸</span>
+                    <span>Follow @utdpamana</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="mt-12">
+                <DanceCarousel images={culturalImages} />
+              </div>
+
+              <div className="text-center mt-12">
+                <div className="bg-gradient-to-r from-blue-400/20 to-purple-500/20 rounded-2xl p-8 border border-blue-300 border-opacity-30">
+                  <h3
+                    className="text-white font-fugaz text-xl lg:text-[36px] mb-6"
+                    style={{
+                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                    }}
+                  >
+                    🎬 WATCH OUR GOODPHIL 2025 CULTURAL SET!
+                  </h3>
+                  <div className="w-full max-w-3xl mx-auto">
+                    <div className="relative rounded-[28px] overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                      <iframe
+                        src="https://www.youtube.com/embed/ru_9K8ygmRg"
+                        title="UTD FSA Cultural Team - Goodphil 2025"
+                        className="w-full h-[200px] md:h-[300px] lg:h-[408px]"
+                        style={{
+                          backgroundColor: '#1a1a1a'
+                        }}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
           {/* MODERN Section */}
-          <section className="w-full max-w-6xl space-y-8 lg:space-y-12">
-            <div className="text-center space-y-4 lg:space-y-6">
-              <h2 
-                className="text-white font-fugaz text-2xl lg:text-[40px] underline"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                MODERN
-              </h2>
-              <p 
-                className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed max-w-5xl mx-auto"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                UTD Maharlika is UTD FSA's Modern team that competes at Isang Mahal and Goodphil! Maharlika aims to exemplify high performance quality within UTD FSA while specializing in hip hop and other styles of dance. The team also aims to foster community in dance and promote growth through shared exploration.
-                <br />
-                <br />
-                Instagram: <span className="underline">@utdmaharlika</span>
-              </p>
-            </div>
+          <section className="w-full max-w-6xl space-y-8 lg:space-y-12 relative">
+            {/* Decorative background element */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-pink-400/10 to-rose-500/10 rounded-3xl -z-10"></div>
 
-            <DanceCarousel images={modernImages} />
+            <div className="relative bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-pink-300 border-opacity-30">
+              <div className="text-center space-y-4 lg:space-y-6">
+                <div className="relative inline-block">
+                  <h2
+                    className="text-white font-fugaz text-3xl lg:text-[48px] relative z-10"
+                    style={{
+                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                    }}
+                  >
+                    <span className="text-pink-300">MODERN</span>
+                  </h2>
+                  <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-pink-400 to-rose-500 rounded-full"></div>
+                </div>
 
-            <div className="text-center">
-              <h3
-                className="text-white font-fugaz text-xl lg:text-[40px] underline"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                WATCH OUR GOODPHIL 2025 MODERN SET!
-              </h3>
-              <div className="w-full max-w-3xl mx-auto mt-6">
-                <video
-                  controls
-                  className="w-full h-[200px] md:h-[300px] lg:h-[408px] rounded-[28px] object-cover"
+                <p
+                  className="text-white font-gabarito text-lg lg:text-[28px] leading-relaxed max-w-5xl mx-auto"
                   style={{
-                    backgroundColor: '#1a1a1a'
+                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
                   }}
                 >
-                  <source src="/modern dance.mp4" type="video/mp4" />
-                  <source src="/modern dance.mov" type="video/quicktime" />
-                  <source src="/modern dance.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
+                  <span className="font-bold text-pink-300">UTD Maharlika</span> is UTD FSA's Modern team that competes at Isang Mahal and Goodphil! Maharlika aims to exemplify high performance quality within UTD FSA while specializing in hip hop and other styles of dance. The team also aims to foster community in dance and promote growth through shared exploration.
+                </p>
+
+                {/* Instagram link with better styling */}
+                <div className="mt-6">
+                  <a
+                    href="https://instagram.com/utdmaharlika"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-600 text-white font-fugaz text-lg lg:text-xl px-6 py-3 rounded-full hover:from-pink-600 hover:to-rose-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  >
+                    <span>📸</span>
+                    <span>Follow @utdmaharlika</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="mt-12">
+                <DanceCarousel images={modernImages} />
+              </div>
+
+              <div className="text-center mt-12">
+                <div className="bg-gradient-to-r from-pink-400/20 to-rose-500/20 rounded-2xl p-8 border border-pink-300 border-opacity-30">
+                  <h3
+                    className="text-white font-fugaz text-xl lg:text-[36px] mb-6"
+                    style={{
+                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                    }}
+                  >
+                    🎬 WATCH OUR GOODPHIL 2025 MODERN SET!
+                  </h3>
+                  <div className="w-full max-w-3xl mx-auto">
+                    <div className="relative rounded-[28px] overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                      <iframe
+                        src="https://www.youtube.com/embed/ngXiLlF_lYY?start=1"
+                        title="UTD FSA Modern Team - Goodphil 2025"
+                        className="w-full h-[200px] md:h-[300px] lg:h-[408px]"
+                        style={{
+                          backgroundColor: '#1a1a1a'
+                        }}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
           {/* Fun Fact */}
           <section className="text-center py-8 lg:py-12">
-            <p 
-              className="text-white font-gabarito text-xl lg:text-[32px]"
-              style={{
-                textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-              }}
-            >
-              Fun Fact: We placed 3rd this year!
-            </p>
+            <div className="relative bg-gradient-to-r from-green-400/20 via-blue-500/20 to-purple-600/20 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-white border-opacity-20 max-w-4xl mx-auto transform hover:scale-105 transition-all duration-300">
+              {/* Decorative elements */}
+              <div className="absolute top-4 left-4 text-4xl">🏆</div>
+              <div className="absolute top-4 right-4 text-4xl">✨</div>
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-4xl">🎉</div>
+
+              <div className="relative z-10">
+                <h3
+                  className="text-white font-fugaz text-2xl lg:text-[40px] mb-4"
+                  style={{
+                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                  }}
+                >
+                  🎊 FUN FACT 🎊
+                </h3>
+                <p
+                  className="text-white font-gabarito text-xl lg:text-[36px] font-bold"
+                  style={{
+                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                  }}
+                >
+                  We placed <span className="text-yellow-300 text-2xl lg:text-[42px]">3rd</span> this year!
+                </p>
+                <div className="mt-6 flex justify-center gap-4">
+                  <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+                  <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse delay-75"></div>
+                  <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse delay-150"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Call to Action Section */}
+          <section className="text-center py-12 lg:py-16">
+            <div className="relative bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-white border-opacity-30 max-w-4xl mx-auto">
+              <h3
+                className="text-white font-fugaz text-2xl lg:text-[40px] mb-6"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                READY TO DANCE WITH US?
+              </h3>
+              <p
+                className="text-white font-gabarito text-lg lg:text-[24px] mb-8 max-w-2xl mx-auto"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                Join UTD FSA and become part of our amazing dance family! Check out our events and see how you can get involved.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  to="/events"
+                  className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-fugaz text-lg lg:text-xl px-8 py-4 rounded-full hover:from-purple-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <span>🗓️</span>
+                  <span>View Events</span>
+                </Link>
+                <Link
+                  to="/membership"
+                  className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-green-500 to-blue-600 text-white font-fugaz text-lg lg:text-xl px-8 py-4 rounded-full hover:from-green-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <span>✨</span>
+                  <span>Join FSA</span>
+                </Link>
+              </div>
+            </div>
           </section>
 
         </main>
+
+        {/* Bottom spacing */}
+        <div className="pb-16"></div>
       </div>
     </div>
   );

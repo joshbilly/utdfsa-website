@@ -3,12 +3,43 @@ import { Link } from "react-router-dom";
 
 export default function Goodphil() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("overview");
+
+  const sportsEvents = [
+    { name: "Volleyball", icon: "🏐", divisions: ["Men's", "Women's", "Co-Ed"] },
+    { name: "Basketball", icon: "🏀", divisions: ["Men's", "Women's"] },
+    { name: "Flag Football", icon: "🏈", divisions: ["Men's", "Women's", "Co-Ed"] },
+    { name: "Soccer", icon: "⚽", divisions: ["Co-Ed"] },
+    { name: "Ultimate Frisbee", icon: "🥏", divisions: ["Co-Ed"] },
+    { name: "Pickleball", icon: "🏓", divisions: ["TBD"] }
+  ];
+
+  const danceTeams = [
+    { 
+      name: "Spirit", 
+      description: "School spirit meets Filipino culture in high-energy performances that ignite the crowd",
+      color: "from-yellow-400 to-orange-500",
+      icon: "⚡"
+    },
+    { 
+      name: "Cultural", 
+      description: "Traditional Filipino dances that tell stories of heritage and history",
+      color: "from-blue-400 to-purple-500",
+      icon: "🏛️"
+    },
+    { 
+      name: "Modern", 
+      description: "Hip-hop and contemporary styles that showcase technical excellence and creativity",
+      color: "from-pink-400 to-rose-500",
+      icon: "🎯"
+    }
+  ];
 
   return (
     <div
       className="min-h-screen w-full relative"
       style={{
-        backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/6b0738c17be5c7713f563eeab91e891144176c3d?width=3024')`,
+        backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/999b9a31f71f65f30dbc7963b8909b87d9b796e9?width=3030')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -16,7 +47,7 @@ export default function Goodphil() {
       }}
     >
       {/* Gradient overlay */}
-      <div 
+      <div
         className="absolute inset-0 w-full h-full z-0"
         style={{
           background: 'linear-gradient(180deg, rgba(13, 39, 24, 0.9) 0%, rgba(47, 141, 87, 0.8) 84.13%)',
@@ -25,7 +56,7 @@ export default function Goodphil() {
       />
       
       <div className="relative z-10 w-full">
-        {/* Header - Same as other pages */}
+        {/* Header */}
         <header className="sticky top-0 z-50">
           <div
             className="h-[80px] lg:h-[80px] w-full flex justify-center"
@@ -43,7 +74,7 @@ export default function Goodphil() {
 
               <Link to="/" className="mx-0.5 lg:mx-1 flex-shrink-0 hover:opacity-80 transition-opacity flex items-center">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/e9d3361da642000f12b6143b43fe9ca1fc4b8c47?width=92"
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/0b71d23b1df30b83ca0f8bcad5b1483f948303d5?width=92"
                   alt="FSA Logo"
                   className="w-[60px] h-[60px] drop-shadow-lg"
                 />
@@ -59,7 +90,7 @@ export default function Goodphil() {
             <div className="lg:hidden flex items-center justify-between w-full px-4 h-[60px] relative">
               <Link to="/" className="hover:opacity-80 transition-opacity">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/e9d3361da642000f12b6143b43fe9ca1fc4b8c47?width=92"
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/0b71d23b1df30b83ca0f8bcad5b1483f948303d5?width=92"
                   alt="FSA Logo"
                   className="w-[40px] h-[40px] drop-shadow-lg"
                 />
@@ -95,230 +126,345 @@ export default function Goodphil() {
         </header>
 
         <main className="flex flex-col items-center px-4 py-8 lg:py-16 gap-16 lg:gap-24">
-          {/* Hero Section with GOODPHIL title */}
-          <section className="w-full max-w-7xl">
-            <div className="flex items-center justify-center gap-4 lg:gap-8 mb-12 lg:mb-16">
-              {/* Left line */}
-              <div className="hidden sm:block flex-1 h-px bg-white max-w-[200px] lg:max-w-[405px]" />
-              
-              {/* Title */}
+          {/* Hero Section with Dynamic Background */}
+          <section className="w-full max-w-7xl relative">
+            {/* Animated Background Elements */}
+            <div className="absolute inset-0 overflow-hidden rounded-3xl">
+              <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute top-32 right-16 w-16 h-16 bg-blue-400 rounded-full opacity-20 animate-pulse delay-300"></div>
+              <div className="absolute bottom-16 left-1/4 w-24 h-24 bg-green-400 rounded-full opacity-20 animate-pulse delay-500"></div>
+              <div className="absolute bottom-32 right-1/3 w-12 h-12 bg-purple-400 rounded-full opacity-20 animate-pulse delay-700"></div>
+            </div>
+
+            <div className="relative z-10 text-center py-16 lg:py-24">
               <h1 
-                className="text-white font-fugaz text-4xl sm:text-6xl lg:text-[96px] text-center flex-shrink-0"
+                className="text-white font-fugaz text-6xl sm:text-8xl lg:text-[120px] mb-8 animate-fade-in"
                 style={{
-                  textShadow: '8px 4px 4px rgba(0, 0, 0, 0.25)'
+                  textShadow: '8px 4px 4px rgba(0, 0, 0, 0.25)',
+                  background: 'linear-gradient(45deg, #FFD700, #FF6B35, #F7931E)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
                 }}
               >
                 GOODPHIL
               </h1>
               
-              {/* Right line */}
-              <div className="hidden sm:block flex-1 h-px bg-white max-w-[200px] lg:max-w-[405px]" />
-            </div>
-          </section>
-
-          {/* What is Goodphil Section */}
-          <section className="w-full max-w-7xl">
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-              {/* Image */}
-              <div className="w-full lg:w-1/2 flex justify-center">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/4e74a48759890864d3b28a44e98933adcf9d356c?width=1098"
-                  alt="Goodphil performance"
-                  className="w-full max-w-[549px] h-auto aspect-square object-cover rounded-lg"
-                  style={{
-                    boxShadow: '16px 13px 7.8px 0 rgba(0, 0, 0, 0.25)'
-                  }}
-                />
-              </div>
-
-              {/* Content */}
-              <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4">
-                <h2 
-                  className="text-white font-fugaz text-2xl lg:text-[40px] underline leading-normal"
+              <div className="max-w-4xl mx-auto space-y-6">
+                <h2
+                  className="text-white font-fugaz text-2xl lg:text-[40px]"
                   style={{
                     textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
                   }}
                 >
-                  WHAT IS GOODPHIL?
+                  March 13-16, 2025 • UT Austin
                 </h2>
-                <p 
-                  className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
+                
+                <p
+                  className="text-white font-gabarito text-xl lg:text-[32px] leading-relaxed"
                   style={{
                     textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
                   }}
                 >
-                  Goodphil is an annual event hosted by FSAs across Texas that brings together college students for a weekend of cultural celebration, sports, dance, and community. It's a great chance for different schools to showcase their talents, compete, and build connections within the Filipino and greater student community.
-                </p>
-                <p 
-                  className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed font-bold underline"
-                  style={{
-                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                  }}
-                >
-                  This year, Goodphil will be held at UT Austin from March 13-16!
+                  The ultimate Filipino intercollegiate experience where <span className="font-bold text-yellow-300">passion meets competition</span> and friendships are forged forever.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* What do we participate in Section */}
-          <section className="w-full max-w-7xl">
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
-              {/* Image */}
-              <div className="w-full lg:w-1/2 flex justify-center">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/7e674be3ed4a62ffba39412c23b9c87f3d768e55?width=1098"
-                  alt="Sports participation"
-                  className="w-full max-w-[549px] h-auto aspect-square object-cover rounded-lg"
-                  style={{
-                    boxShadow: '16px 13px 7.8px 0 rgba(0, 0, 0, 0.25)'
-                  }}
-                />
-              </div>
+          {/* Interactive Navigation Tabs */}
+          <section className="w-full max-w-6xl">
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
+              {[
+                { id: "overview", label: "The Experience", icon: "🌟" },
+                { id: "sports", label: "Sports Arena", icon: "🏆" },
+                { id: "dance", label: "Dance Showcase", icon: "💃" },
+                { id: "participate", label: "Join The Action", icon: "🚀" }
+              ].map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveSection(tab.id)}
+                  className={`px-6 py-4 rounded-full font-fugaz text-lg lg:text-xl transition-all duration-300 transform hover:scale-105 ${
+                    activeSection === tab.id
+                      ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-black shadow-lg'
+                      : 'bg-white bg-opacity-20 text-white hover:bg-opacity-30'
+                  }`}
+                >
+                  <span className="mr-2">{tab.icon}</span>
+                  {tab.label}
+                </button>
+              ))}
+            </div>
 
-              {/* Content */}
-              <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4">
-                <h2 
-                  className="text-white font-fugaz text-2xl lg:text-[40px] underline leading-normal"
-                  style={{
-                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                  }}
-                >
-                  WHAT DO WE PARTICIPATE IN?
-                </h2>
-                <p 
-                  className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                  style={{
-                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                  }}
-                >
-                  UTD FSA competes in a multitude of sports and dance categories:
-                </p>
-                <div className="space-y-2">
-                  <p 
-                    className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                    style={{
-                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                    }}
-                  >
-                    <span className="font-bold">Sports (Men's, Women's, Co-Ed):</span> Volleyball, Basketball, Flag Football, Soccer, Ultimate Frisbee, Pickleball (gag sport)
-                  </p>
-                  <p 
-                    className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                    style={{
-                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                    }}
-                  >
-                    <span className="font-bold">Dance Teams:</span> Modern, Cultural, Spirit
-                  </p>
+            {/* Dynamic Content Sections */}
+            <div className="min-h-[600px]">
+              {activeSection === "overview" && (
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center animate-fade-in">
+                  <div className="order-2 lg:order-1">
+                    <div className="space-y-8">
+                      <div className="relative bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+                        <h3
+                          className="text-white font-fugaz text-2xl lg:text-[36px] mb-6"
+                          style={{
+                            textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                          }}
+                        >
+                          What Makes Goodphil Special?
+                        </h3>
+                        <div className="space-y-4">
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-gradient-to-r from-red-400 to-pink-500 rounded-full flex items-center justify-center text-xl">⚡</div>
+                            <span className="text-white font-gabarito text-lg lg:text-xl">Intense competition across multiple sports and dance categories</span>
+                          </div>
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center text-xl">🤝</div>
+                            <span className="text-white font-gabarito text-lg lg:text-xl">Building connections between FSAs across Texas</span>
+                          </div>
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-xl">🎭</div>
+                            <span className="text-white font-gabarito text-lg lg:text-xl">Celebrating Filipino culture through performance and tradition</span>
+                          </div>
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-xl">✨</div>
+                            <span className="text-white font-gabarito text-lg lg:text-xl">Creating memories that last a lifetime</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="order-1 lg:order-2">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2Ff48189b4dcc3416b87105f21f34d6738?format=webp&width=800"
+                      alt="UTD FSA Goodphil 2025 Co-Ed Volleyball Team"
+                      className="w-full h-[400px] lg:h-[500px] object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-          </section>
+              )}
 
-          {/* How can I participate Section */}
-          <section className="w-full max-w-7xl">
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-              {/* Image */}
-              <div className="w-full lg:w-1/2 flex justify-center">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/2067b52d420b812cc8f6ba95407af5a02152b907?width=1098"
-                  alt="Team group photo"
-                  className="w-full max-w-[549px] h-auto aspect-square object-cover rounded-lg"
-                  style={{
-                    boxShadow: '16px 13px 7.8px 0 rgba(0, 0, 0, 0.25)'
-                  }}
-                />
-              </div>
+              {activeSection === "sports" && (
+                <div className="animate-fade-in">
+                  <div className="text-center mb-12">
+                    <h3
+                      className="text-white font-fugaz text-3xl lg:text-[48px] mb-6"
+                      style={{
+                        textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                      }}
+                    >
+                      🏟️ Sports Competition
+                    </h3>
+                    <p
+                      className="text-white font-gabarito text-lg lg:text-[24px] max-w-3xl mx-auto"
+                      style={{
+                        textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                      }}
+                    >
+                      Battle it out on the field and court! Each sport features Men's, Women's, and Co-Ed divisions for maximum participation.
+                    </p>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {sportsEvents.map((sport, index) => (
+                      <div key={index} className="relative bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 border border-white border-opacity-20 text-center transform hover:scale-105 transition-all duration-300">
+                        <div className="text-4xl lg:text-5xl mb-4">{sport.icon}</div>
+                        <h4
+                          className="text-white font-fugaz text-xl lg:text-[24px] mb-3"
+                          style={{
+                            textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                          }}
+                        >
+                          {sport.name}
+                        </h4>
+                        <div className="space-y-1">
+                          {sport.divisions.map((division, idx) => (
+                            <div key={idx} className="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-gabarito text-sm px-3 py-1 rounded-full">
+                              {division}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
-              {/* Content */}
-              <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4">
-                <h2 
-                  className="text-white font-fugaz text-2xl lg:text-[40px] underline leading-normal"
-                  style={{
-                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                  }}
-                >
-                  HOW CAN I PARTICIPATE?
-                </h2>
-                <p 
-                  className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                  style={{
-                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                  }}
-                >
-                  In order to represent UTD FSA at Goodphil, UTD FSA members must meet certain requirements.
-                </p>
-                <ul className="space-y-3 text-left">
-                  <li 
-                    className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                    style={{
-                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                    }}
-                  >
-                    • Pay your dues for membership + purchase your Goodphil participant ticket!
-                  </li>
-                  <li 
-                    className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                    style={{
-                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                    }}
-                  >
-                    • Earn <span className="font-bold underline">six</span> Goodphil points by attending UTD FSA events!
-                  </li>
-                  <li 
-                    className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                    style={{
-                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                    }}
-                  >
-                    • Attend 3 General Meetings (one of which must be a Risk Management meeting)!
-                  </li>
-                  <li 
-                    className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                    style={{
-                      textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                    }}
-                  >
-                    • Complete and submit all of the necessary travel forms!
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
+              {activeSection === "dance" && (
+                <div className="animate-fade-in">
+                  <div className="text-center mb-12">
+                    <h3
+                      className="text-white font-fugaz text-3xl lg:text-[48px] mb-6"
+                      style={{
+                        textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                      }}
+                    >
+                      🎭 Dance Showcase
+                    </h3>
+                    <p
+                      className="text-white font-gabarito text-lg lg:text-[24px] max-w-3xl mx-auto"
+                      style={{
+                        textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                      }}
+                    >
+                      Where artistry meets competition! Our dance teams showcase the full spectrum of Filipino culture and modern expression.
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-8">
+                    {danceTeams.map((team, index) => (
+                      <div key={index} className="relative">
+                        <div className={`absolute inset-0 bg-gradient-to-r ${team.color} opacity-20 rounded-2xl blur-xl`}></div>
+                        <div className="relative bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-white border-opacity-20">
+                          <div className="flex flex-col lg:flex-row items-center gap-8">
+                            <div className="text-center lg:text-left flex-1">
+                              <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
+                                <div className={`w-16 h-16 bg-gradient-to-r ${team.color} rounded-full flex items-center justify-center text-2xl`}>
+                                  {team.icon}
+                                </div>
+                                <h4
+                                  className="text-white font-fugaz text-2xl lg:text-[32px]"
+                                  style={{
+                                    textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                                  }}
+                                >
+                                  {team.name}
+                                </h4>
+                              </div>
+                              <p
+                                className="text-white font-gabarito text-lg lg:text-[20px] leading-relaxed"
+                                style={{
+                                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                                }}
+                              >
+                                {team.description}
+                              </p>
+                            </div>
+                            <div className="flex-shrink-0">
+                              <Link
+                                to="/dance"
+                                className={`inline-flex items-center gap-3 bg-gradient-to-r ${team.color} text-white font-fugaz text-lg px-6 py-3 rounded-full hover:scale-105 transition-all duration-300 shadow-lg`}
+                              >
+                                <span>👀</span>
+                                <span>Watch Our Team</span>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
-          {/* Coming Soon Section */}
-          <section className="w-full max-w-5xl text-center">
-            <div className="flex flex-col items-center gap-4 lg:gap-6">
-              <div
-                className="text-white font-fugaz text-xl lg:text-[40px] leading-relaxed"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                <span className="underline">GOODPHIL PARTICIPANT TICKET</span>: COMING SOON!
-              </div>
-              <div
-                className="text-white font-fugaz text-xl lg:text-[40px] leading-relaxed"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                <span className="underline">GOODPHIL SPECTATOR TICKET</span>: COMING SOON!
-              </div>
-              <div
-                className="text-white font-fugaz text-xl lg:text-[40px] leading-relaxed"
-                style={{
-                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
-                }}
-              >
-                <span className="underline">GOODPHIL TRAVEL & WAIVER FORMS</span>: COMING SOON!
-              </div>
+              {activeSection === "participate" && (
+                <div className="animate-fade-in">
+                  <div className="text-center mb-12">
+                    <h3
+                      className="text-white font-fugaz text-3xl lg:text-[48px] mb-6"
+                      style={{
+                        textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                      }}
+                    >
+                      🚀 Ready to Compete?
+                    </h3>
+                    <p
+                      className="text-white font-gabarito text-lg lg:text-[24px] max-w-3xl mx-auto"
+                      style={{
+                        textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                      }}
+                    >
+                      Join Team UTD FSA and represent our school at the biggest Filipino intercollegiate competition in Texas!
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div className="space-y-6">
+                      <h4
+                        className="text-white font-fugaz text-2xl lg:text-[32px] text-center"
+                        style={{
+                          textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                        }}
+                      >
+                        Requirements Checklist
+                      </h4>
+                      {[
+                        { icon: "💳", text: "Pay FSA dues + purchase Goodphil ticket", status: "required" },
+                        { icon: "⭐", text: "Earn 6 points by attending FSA events", status: "required" },
+                        { icon: "📋", text: "Attend 3 General Meetings (1 Risk Management)", status: "required" },
+                        { icon: "📄", text: "Submit all travel and waiver forms", status: "required" }
+                      ].map((req, index) => (
+                        <div key={index} className="flex items-center gap-4 bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20">
+                          <div className="text-2xl">{req.icon}</div>
+                          <span className="text-white font-gabarito text-lg">{req.text}</span>
+                          <div className="ml-auto">
+                            <div className="w-6 h-6 border-2 border-white rounded-full flex items-center justify-center">
+                              <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="space-y-6">
+                      <h4
+                        className="text-white font-fugaz text-2xl lg:text-[32px] text-center"
+                        style={{
+                          textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                        }}
+                      >
+                        Coming Soon
+                      </h4>
+                      {[
+                        { icon: "🎫", text: "Participant Tickets", status: "coming" },
+                        { icon: "👥", text: "Spectator Tickets", status: "coming" },
+                        { icon: "📋", text: "Travel & Waiver Forms", status: "coming" }
+                      ].map((item, index) => (
+                        <div key={index} className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 backdrop-blur-sm rounded-xl p-6 border border-yellow-300 border-opacity-30 text-center">
+                          <div className="text-3xl mb-2">{item.icon}</div>
+                          <span className="text-white font-gabarito text-lg font-bold">{item.text}</span>
+                          <div className="mt-2 text-yellow-300 font-gabarito text-sm">Available Soon!</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <Link
+                        to="/membership"
+                        className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-fugaz text-lg lg:text-xl px-8 py-4 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                      >
+                        <span>✨</span>
+                        <span>Join FSA Now</span>
+                      </Link>
+                      <Link
+                        to="/events"
+                        className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-fugaz text-lg lg:text-xl px-8 py-4 rounded-full hover:from-green-600 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                      >
+                        <span>📅</span>
+                        <span>Attend Events</span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </section>
 
         </main>
+
+        {/* Bottom spacing */}
+        <div className="pb-16"></div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 0.6s ease-out forwards;
+        }
+      `}</style>
     </div>
   );
 }

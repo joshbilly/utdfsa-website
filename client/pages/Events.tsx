@@ -157,6 +157,8 @@ export default function Events() {
 
   const dayHeaders = ["SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT"];
 
+
+
   return (
     <div
       className="min-h-screen w-full relative"
@@ -269,72 +271,50 @@ export default function Events() {
             </div>
 
             {/* Description Section */}
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-32 max-w-6xl mx-auto">
-              {/* Left text */}
-              <div className="flex-1 text-center lg:text-left">
-                <p 
-                  className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                  style={{
-                    textShadow: '7px 4px 4px rgba(0, 0, 0, 0.25)'
-                  }}
-                >
-                  Want to meet new people?<br />
-                  Spend time with your pamilya?<br />
-                  Make some new memories?
-                </p>
-              </div>
-
-              {/* Divider line */}
-              <div className="hidden lg:block w-px h-[218px] bg-white" />
-
-              {/* Right text */}
-              <div className="flex-1 text-center lg:text-left">
-                <p 
-                  className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
-                  style={{
-                    textShadow: '7px 4px 4px rgba(0, 0, 0, 0.25)'
-                  }}
-                >
-                  Check out what upcoming events UTD FSA has in store!
-                </p>
-              </div>
+            <div className="text-center max-w-4xl mx-auto space-y-6">
+              <p
+                className="text-white font-gabarito text-xl lg:text-[28px] leading-relaxed"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                Your gateway to Filipino culture, friendship, and unforgettable experiences at UTD!
+              </p>
+              <p
+                className="text-white font-gabarito text-lg lg:text-[20px] leading-relaxed opacity-90"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                From cultural workshops to epic parties, professional development to community service -
+                there's something for everyone in our vibrant FSA family.
+              </p>
             </div>
           </section>
 
-          {/* Important Links Section */}
-          <section className="w-full max-w-5xl text-center space-y-8">
-            <h2 
-              className="text-white font-fugaz text-2xl lg:text-[40px] leading-normal"
-              style={{
-                textShadow: '8px 4px 4px rgba(0, 0, 0, 0.25)'
-              }}
-            >
-              IMPORTANT LINKS
-            </h2>
-            
-            <a
-              href="https://party.utdfsa.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-white font-gabarito text-lg lg:text-[36px] underline hover:opacity-80 transition-opacity"
-              style={{
-                textShadow: '7px 4px 4px rgba(0, 0, 0, 0.25)'
-              }}
-            >
-              <span className="font-bold">September 12, 2025</span> | Swagapino Party - Ticket Purchase Form
-            </a>
-          </section>
+
 
           {/* Calendar Section */}
-          <section className="w-full max-w-7xl space-y-8">
-            <h2 
-              className="text-white font-fugaz text-2xl lg:text-[40px] text-center leading-normal"
-              style={{
-                textShadow: '8px 4px 4px rgba(0, 0, 0, 0.25)'
-              }}
-            >
-              SEPTEMBER EVENTS CALENDAR
-            </h2>
+          <section id="calendar" className="w-full max-w-7xl space-y-8">
+            <div className="text-center space-y-4">
+              <h2
+                className="text-white font-fugaz text-2xl lg:text-[40px] leading-normal"
+                style={{
+                  textShadow: '8px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                📅 SEPTEMBER EVENTS CALENDAR
+              </h2>
+              <p
+                className="text-white font-gabarito text-lg lg:text-[20px] max-w-3xl mx-auto"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                Your complete guide to all FSA events this month. Click on any event for more details!
+              </p>
+            </div>
+
 
             <div className="overflow-x-auto">
               <div className="min-w-[800px]">
@@ -391,7 +371,50 @@ export default function Events() {
             </div>
           </section>
 
+          {/* Call to Action Section */}
+          <section className="w-full max-w-4xl">
+            <div className="relative bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-white border-opacity-30 text-center">
+              <h2
+                className="text-white font-fugaz text-2xl lg:text-[36px] mb-6"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                Ready to Join the Fun?
+              </h2>
+              <p
+                className="text-white font-gabarito text-lg lg:text-[20px] mb-8 max-w-2xl mx-auto"
+                style={{
+                  textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                Don't miss out on any of these amazing events! Become an FSA member today and be part of every celebration, workshop, and unforgettable moment.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  to="/membership"
+                  className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-fugaz text-lg px-8 py-4 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <span>🚀</span>
+                  <span>Join FSA Now</span>
+                </Link>
+                <a
+                  href="https://party.utdfsa.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-pink-500 to-rose-600 text-white font-fugaz text-lg px-8 py-4 rounded-full hover:from-pink-600 hover:to-rose-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <span>🎉</span>
+                  <span>Get Party Tickets</span>
+                </a>
+              </div>
+            </div>
+          </section>
+
         </main>
+
+        {/* Bottom spacing */}
+        <div className="pb-16"></div>
       </div>
     </div>
   );
