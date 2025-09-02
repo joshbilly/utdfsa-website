@@ -216,8 +216,48 @@ export default function Faq() {
     </div>
   );
 
+  const pamilyaContent = (
+    <div className="space-y-6">
+      <div>
+        <p className="font-bold underline mb-2">What is a Pamilya and how does it work?</p>
+        <p>Pamilya is our mentorship and community system. New members (Adings) are matched with upperclassmen mentors (Kuyas/Ates) and a small group for the year.</p>
+      </div>
+      <div>
+        <p className="font-bold underline mb-2">How do I join a Pamilya?</p>
+        <p>First, become a paid member. Then complete the Ading or Kuya/Ate form on our website so we can place you based on interests and availability.</p>
+      </div>
+      <div>
+        <p className="font-bold underline mb-2">When are placements?</p>
+        <p>Placements begin early Fall and continue on a rolling basis. Submit your form as soon as possible for earlier matching.</p>
+      </div>
+      <div>
+        <p className="font-bold underline mb-2">Can I switch Pamilys?</p>
+        <p>A formal Pamilya transfer request form will be available at a later date.</p>
+      </div>
+    </div>
+  );
+
+  const eventsTicketsContent = (
+    <div className="space-y-6">
+      <div>
+        <p className="font-bold underline mb-2">How do I buy party tickets?</p>
+        <p>Purchase tickets online at <a href="https://party.utdfsa.com/" target="_blank" rel="noopener noreferrer" className="underline">party.utdfsa.com</a>. Buy early—popular events sell out.</p>
+      </div>
+      <div>
+        <p className="font-bold underline mb-2">Do I need to register for events?</p>
+        <p>Some events require advance registration or RSVP. Check the Events page calendar for details and links.</p>
+      </div>
+      <div>
+        <p className="font-bold underline mb-2">Where are events held?</p>
+        <p>Most events are on UTD campus. Off-campus locations will be clearly noted on the Events page and Instagram.</p>
+      </div>
+    </div>
+  );
+
   const accordionItems = [
     { title: "GENERAL INFORMATION", content: generalInformationContent },
+    { title: "PAMILYA & MENTORSHIP", content: pamilyaContent },
+    { title: "EVENTS & TICKETS", content: eventsTicketsContent },
     { title: "GOODPHIL", content: goodphilContent },
     { title: "SPORTS & DANCE TEAMS", content: sportsAndDanceContent },
     { title: "LEADERSHIP, COMMUNICATION, AND UPDATES", content: leadershipContent },
@@ -335,6 +375,28 @@ export default function Faq() {
             >
               For any other questions or important inquiries, please contact us via Instagram (<span className="font-bold underline">@fsautd</span>) or email (<span className="font-bold underline">fsautd@gmail.com</span>)!
             </p>
+          </section>
+
+          {/* Quick Links */}
+          <section className="w-full max-w-5xl">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-2">
+              <Link to="/membership" className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-fugaz px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 transition">
+                <span>💳</span>
+                <span>Membership</span>
+              </Link>
+              <Link to="/pamilyas" className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-fugaz px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 transition">
+                <span>👨‍👩‍👧‍👦</span>
+                <span>Pamilyas</span>
+              </Link>
+              <a href="/events#calendar" className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-fugaz px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 transition">
+                <span>📅</span>
+                <span>Events Calendar</span>
+              </a>
+              <a href="https://party.utdfsa.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-fugaz px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 transition">
+                <span>🎫</span>
+                <span>Buy Party Tickets</span>
+              </a>
+            </div>
           </section>
 
           {/* FAQ Accordions */}

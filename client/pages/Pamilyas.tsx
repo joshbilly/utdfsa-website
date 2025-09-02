@@ -188,7 +188,7 @@ export default function Pamilyas() {
 
             {/* Why should I join */}
             <div className="text-center space-y-4 lg:space-y-6">
-              <h2 
+              <h2
                 className="text-white font-fugaz text-2xl lg:text-[40px] underline"
                 style={{
                   textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
@@ -196,7 +196,7 @@ export default function Pamilyas() {
               >
                 WHY SHOULD I JOIN A PAM?
               </h2>
-              <p 
+              <p
                 className="text-white font-gabarito text-lg lg:text-[32px] leading-relaxed"
                 style={{
                   textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
@@ -204,7 +204,71 @@ export default function Pamilyas() {
               >
                 Whether you're a new or returning member, pams are a great way to meet new people that have the same interests as you and create friendships that enhance your college experience and afterward! We want to make sure that you feel at home and find a community within UTD FSA, and highly recommend joining a pam.
               </p>
-              
+            </div>
+
+            {/* How It Works */}
+            <div className="w-full max-w-6xl mx-auto">
+              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-white border-opacity-20">
+                <h3
+                  className="text-white font-fugaz text-xl lg:text-[32px] text-center mb-6"
+                  style={{ textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)' }}
+                >
+                  HOW IT WORKS
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <div className="text-4xl mb-2">💳</div>
+                    <h4 className="text-white font-fugaz text-lg mb-2" style={{ textShadow: '3px 4px 4px rgba(0,0,0,0.25)' }}>Become a Member</h4>
+                    <p className="text-white font-gabarito opacity-90">Pay your UTD FSA membership dues to unlock Pamilya placement.</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl mb-2">📝</div>
+                    <h4 className="text-white font-fugaz text-lg mb-2" style={{ textShadow: '3px 4px 4px rgba(0,0,0,0.25)' }}>Fill Out Your Form</h4>
+                    <p className="text-white font-gabarito opacity-90">Tell us your interests so we can match you with the right Pamilya.</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl mb-2">🎉</div>
+                    <h4 className="text-white font-fugaz text-lg mb-2" style={{ textShadow: '3px 4px 4px rgba(0,0,0,0.25)' }}>Get Matched</h4>
+                    <p className="text-white font-gabarito opacity-90">Meet your Kuyas, Ates, and fellow Adings and start making memories.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* What Pamilys Do */}
+            <div className="w-full max-w-6xl mx-auto">
+              <h3
+                className="text-white font-fugaz text-xl lg:text-[32px] text-center mb-6"
+                style={{ textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)' }}
+              >
+                WHAT PAMILYA GROUPS DO
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl">🤝</div>
+                  <p className="text-white font-gabarito">Mentorship and support from Kuyas and Ates throughout the year.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl">🎊</div>
+                  <p className="text-white font-gabarito">Socials, mixers, and bonding activities with your Pamilya.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl">🥟</div>
+                  <p className="text-white font-gabarito">Cultural workshops and celebrations to connect with heritage.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl">🏐</div>
+                  <p className="text-white font-gabarito">Intramurals and friendly competitions with other Pamilya groups.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl">📚</div>
+                  <p className="text-white font-gabarito">Study nights and accountability for classes and exams.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl">💖</div>
+                  <p className="text-white font-gabarito">Community service and volunteering together across campus.</p>
+                </div>
+              </div>
             </div>
 
             {/* How can I be put into a PAM */}
@@ -243,7 +307,7 @@ export default function Pamilyas() {
             >
               Kuya/Ate Form
             </a>
-            
+
             <a
               href="https://forms.utdfsa.com/ading"
               target="_blank"
@@ -257,6 +321,29 @@ export default function Pamilyas() {
             >
               Ading Form
             </a>
+
+            {/* Extra CTA */}
+            <div className="text-center mt-2">
+              <p className="text-white font-gabarito opacity-90 mb-3" style={{ textShadow: '3px 4px 4px rgba(0,0,0,0.25)' }}>
+                Not sure which form to fill out? Visit our FAQ or come to a general meeting and we'll help you out.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <a
+                  href="/faq"
+                  className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-fugaz px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 transition"
+                >
+                  <span>❓</span>
+                  <span>Visit FAQ</span>
+                </a>
+                <a
+                  href="/events"
+                  className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-fugaz px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 transition"
+                >
+                  <span>📅</span>
+                  <span>See Events</span>
+                </a>
+              </div>
+            </div>
           </section>
 
         </main>
