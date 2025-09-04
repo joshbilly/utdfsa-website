@@ -17,12 +17,14 @@ export default function Footer() {
           NEWSLETTERS
         </Link>
         
-        <Link 
-          to="/meeting-slides"
+        <a
+          href="/FSA First General Meeting Presentation.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-white font-fugaz text-xl sm:text-2xl lg:text-[36px] text-center underline drop-shadow-lg hover:opacity-80 transition-opacity"
         >
           GEN MEETING SLIDES
-        </Link>
+        </a>
         
         <Link 
           to="/faq"

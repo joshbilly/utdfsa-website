@@ -248,9 +248,14 @@ export default function Index() {
               <Link to="/newsletters" className="text-white font-fugaz text-lg lg:text-[28px] text-center underline drop-shadow-lg hover:opacity-80 transition-opacity">
                 NEWSLETTERS
               </Link>
-              <span className="text-white font-fugaz text-lg lg:text-[28px] text-center underline drop-shadow-lg">
+              <a
+                href="/FSA First General Meeting Presentation.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-fugaz text-lg lg:text-[28px] text-center underline drop-shadow-lg hover:opacity-80 transition-opacity"
+              >
                 GEN MEETING SLIDES
-              </span>
+              </a>
               <Link to="/faq" className="text-white font-fugaz text-lg lg:text-[28px] text-center underline drop-shadow-lg hover:opacity-80 transition-opacity">
                 FAQ
               </Link>
