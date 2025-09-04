@@ -18,7 +18,7 @@ export default function Footer() {
         </Link>
         
         <a
-          href="/FSA First General Meeting Presentation.pdf"
+          href="https://www.canva.com/design/DAGxII-puNw/tiTUFLkhr3NcpcMN7ojbmw/view?utm_content=DAGxII-puNw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc71e5517b7"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white font-fugaz text-xl sm:text-2xl lg:text-[36px] text-center underline drop-shadow-lg hover:opacity-80 transition-opacity"
