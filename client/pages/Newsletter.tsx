@@ -138,16 +138,17 @@ export default function Newsletter() {
             
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <iframe
-                src="https://cdn.builder.io/o/assets%2Fc69a04683e834560a2043833f655482b%2Fc02a4cb1dbd34210aac8b98e22e58b9c?alt=media&token=8a033842-be88-4d47-850f-6aadcc32a519&apiKey=c69a04683e834560a2043833f655482b"
+                src="https://drive.google.com/file/d/18NP4NMf9HwBtFfBo9Az-51Skz3KsslLJ/preview"
                 className="w-full h-[600px] md:h-[700px] lg:h-[800px]"
-                title="FSA Newsletter - September 2025"
+                title="FSA Newsletter - October 2025"
                 frameBorder="0"
+                allow="fullscreen"
               />
             </div>
             
             <div className="text-center mt-6">
               <a
-                href="https://cdn.builder.io/o/assets%2Fc69a04683e834560a2043833f655482b%2Fc02a4cb1dbd34210aac8b98e22e58b9c?alt=media&token=8a033842-be88-4d47-850f-6aadcc32a519&apiKey=c69a04683e834560a2043833f655482b"
+                href="https://drive.google.com/uc?export=download&id=18NP4NMf9HwBtFfBo9Az-51Skz3KsslLJ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#27688E] text-white font-fugaz text-lg px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"

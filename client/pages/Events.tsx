@@ -1,163 +1,128 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
 interface CalendarEvent {
   title: string;
   organizer: string;
   color: string;
+  textColor?: string;
 }
 
 interface CalendarDay {
-  date: string;
+  dateKey: string; // YYYY-MM-DD
+  label: string; // e.g. "1", "30"
   day: number;
   event?: CalendarEvent;
   isCurrentMonth: boolean;
 }
 
+function pad(num: number) {
+  return num.toString().padStart(2, "0");
+}
+
+function formatKey(y: number, m: number, d: number) {
+  return `${y}-${pad(m + 1)}-${pad(d)}`;
+}
+
+function generateCalendar(year: number, monthIndex: number, events: Record<string, CalendarEvent>): CalendarDay[] {
+  const firstDay = new Date(year, monthIndex, 1).getDay();
+  const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
+  const prevMonthDays = new Date(year, monthIndex, 0).getDate();
+
+  const result: CalendarDay[] = [];
+
+  for (let i = 0; i < 42; i++) {
+    const dayNum = i - firstDay + 1;
+
+    if (dayNum < 1) {
+      const d = prevMonthDays + dayNum;
+      const prevDate = new Date(year, monthIndex - 1, d);
+      const key = formatKey(prevDate.getFullYear(), prevDate.getMonth(), prevDate.getDate());
+      result.push({
+        dateKey: key,
+        label: String(d),
+        day: prevDate.getDate(),
+        isCurrentMonth: false,
+        event: events[key],
+      });
+    } else if (dayNum > daysInMonth) {
+      const d = dayNum - daysInMonth;
+      const nextDate = new Date(year, monthIndex + 1, d);
+      const key = formatKey(nextDate.getFullYear(), nextDate.getMonth(), nextDate.getDate());
+      result.push({
+        dateKey: key,
+        label: String(d),
+        day: nextDate.getDate(),
+        isCurrentMonth: false,
+        event: events[key],
+      });
+    } else {
+      const currentDate = new Date(year, monthIndex, dayNum);
+      const key = formatKey(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+      result.push({
+        dateKey: key,
+        label: String(dayNum),
+        day: dayNum,
+        isCurrentMonth: true,
+        event: events[key],
+      });
+    }
+  }
+
+  return result;
+}
+
 export default function Events() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // September 2025 calendar data
-  const calendarData: CalendarDay[] = [
-    { date: "30", day: 30, isCurrentMonth: false },
-    { date: "Sept 1", day: 1, isCurrentMonth: true },
-    { date: "2", day: 2, isCurrentMonth: true },
-    { 
-      date: "3", 
-      day: 3, 
-      isCurrentMonth: true,
-      event: {
-        title: "FIRST GENERAL MEETING",
-        organizer: "DJ Sagutaon",
-        color: "#459C79"
-      }
+  const YEAR = 2025;
+  const MONTH_INDEX = 9; // October (0-based)
+
+  const events: Record<string, CalendarEvent> = {
+    [formatKey(YEAR, MONTH_INDEX, 7)]: {
+      title: "SECOND GENERAL MEETING",
+      organizer: "DJ Sagutaon",
+      color: "#9BA4AE",
     },
-    {
-      date: "4",
-      day: 4,
-      isCurrentMonth: true,
-      event: {
-        title: "COCO SHRIMP FUNDRAISER",
-        organizer: "Ariana Halili",
-        color: "#FFB3BA"
-      }
+    [formatKey(YEAR, MONTH_INDEX, 10)]: {
+      title: "PAINTING NIGHT",
+      organizer: "Livy Ker",
+      color: "#9B6B4F",
     },
-    { 
-      date: "5", 
-      day: 5, 
-      isCurrentMonth: true,
-      event: {
-        title: "PAMANA WORKSHOP (3-5)",
-        organizer: "Tristan Casillan",
-        color: "#FFF3C7"
-      }
+    [formatKey(YEAR, MONTH_INDEX, 12)]: {
+      title: "PAMILYA FIELD DAY",
+      organizer: "Richard Aryata, Phuc Tran",
+      color: "#D7A754",
     },
-    { 
-      date: "6", 
-      day: 6, 
-      isCurrentMonth: true,
-      event: {
-        title: "MODERN AUDITIONS (12-3)\n\nPAMANA WORKSHOP (3-5)",
-        organizer: "Cianna R., Tristan C.",
-        color: "#FFF3C7"
-      }
+    [formatKey(YEAR, MONTH_INDEX, 19)]: {
+      title: "FRIENDS AND FAMILY NIGHT",
+      organizer: "Tristan Casillan",
+      color: "#8C5A3E",
     },
-    { date: "7", day: 7, isCurrentMonth: true },
-    {
-      date: "8",
-      day: 8,
-      isCurrentMonth: true,
-      event: {
-        title: "JUNBI MATCHA FUNDRAISER",
-        organizer: "Ariana Halili",
-        color: "#E8DAFF"
-      }
+    [formatKey(YEAR, MONTH_INDEX, 22)]: {
+      title: "FSA BAKE SALE",
+      organizer: "Ariana Halili",
+      color: "#D8C4A5",
     },
-    { date: "9", day: 9, isCurrentMonth: true },
-    { date: "10", day: 10, isCurrentMonth: true },
-    { 
-      date: "11", 
-      day: 11, 
-      isCurrentMonth: true,
-      event: {
-        title: "KUYA/ATE MEETING",
-        organizer: "Josh Eromonsele",
-        color: "#87A26C"
-      }
+    [formatKey(YEAR, MONTH_INDEX, 25)]: {
+      title: "ISANG MAHAL",
+      organizer: "Hosted by PHISA @ Texas A&M",
+      color: "#7C8599",
     },
-    {
-      date: "12",
-      day: 12,
-      isCurrentMonth: true,
-      event: {
-        title: "VISION BOARD NIGHT\n\nSWAGAPINO PARTY",
-        organizer: "Buy tickets online!",
-        color: "#FFDEE3"
-      }
+    [formatKey(YEAR, MONTH_INDEX, 27)]: {
+      title: "ELEVATED COFFEE & TEA FUNDRAISER",
+      organizer: "Ariana Halili",
+      color: "#D8C4A5",
     },
-    { date: "13", day: 13, isCurrentMonth: true },
-    { date: "14", day: 14, isCurrentMonth: true },
-    { 
-      date: "15", 
-      day: 15, 
-      isCurrentMonth: true,
-      event: {
-        title: "PIE AN OFFICER FUNDRAISER",
-        organizer: "Ariana Halili",
-        color: "#D8FFE3"
-      }
-    },
-    { date: "16", day: 16, isCurrentMonth: true },
-    { 
-      date: "17", 
-      day: 17, 
-      isCurrentMonth: true,
-      event: {
-        title: "FOOD FESTIVAL",
-        organizer: "Patrick Enerio",
-        color: "#D8FFE3"
-      }
-    },
-    { date: "18", day: 18, isCurrentMonth: true },
-    { 
-      date: "19", 
-      day: 19, 
-      isCurrentMonth: true,
-      event: {
-        title: "SAWAYAN SHOWDOWN",
-        organizer: "Cianna Rodriguez",
-        color: "#FFF3C7"
-      }
-    },
-    { date: "20", day: 20, isCurrentMonth: true },
-    { date: "21", day: 21, isCurrentMonth: true },
-    { date: "22", day: 22, isCurrentMonth: true },
-    { date: "23", day: 23, isCurrentMonth: true },
-    { date: "24", day: 24, isCurrentMonth: true },
-    { date: "25", day: 25, isCurrentMonth: true },
-    { 
-      date: "26", 
-      day: 26, 
-      isCurrentMonth: true,
-      event: {
-        title: "SCAVENGER HUNT SOCIAL",
-        organizer: "Lauren Siacunco",
-        color: "#D8FFE3"
-      }
-    },
-    { date: "27", day: 27, isCurrentMonth: true },
-    { date: "28", day: 28, isCurrentMonth: true },
-    { date: "29", day: 29, isCurrentMonth: true },
-    { date: "30", day: 30, isCurrentMonth: true },
-    { date: "Oct 1", day: 1, isCurrentMonth: false },
-    { date: "Oct 2", day: 2, isCurrentMonth: false },
-    { date: "Oct 3", day: 3, isCurrentMonth: false },
-    { date: "Oct 4", day: 4, isCurrentMonth: false }
-  ];
+  };
+
+  const calendarData = useMemo(() => generateCalendar(YEAR, MONTH_INDEX, events), [YEAR, MONTH_INDEX]);
 
   const dayHeaders = ["SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT"];
 
-
+  const monthTitle = useMemo(() => {
+    return new Date(YEAR, MONTH_INDEX, 1).toLocaleString(undefined, { month: "long" }).toUpperCase();
+  }, []);
 
   return (
     <div
@@ -334,7 +299,7 @@ export default function Events() {
                   textShadow: '8px 4px 4px rgba(0, 0, 0, 0.25)'
                 }}
               >
-                📅 SEPTEMBER EVENTS CALENDAR
+                📅 {monthTitle} EVENTS CALENDAR
               </h2>
               <p
                 className="text-white font-gabarito text-lg lg:text-[20px] max-w-3xl mx-auto"
@@ -382,7 +347,7 @@ export default function Events() {
                       <div className={`text-black font-inter text-lg font-medium ${
                         !dayData.isCurrentMonth ? 'opacity-40' : ''
                       }`}>
-                        {dayData.date}
+                        {dayData.label}
                       </div>
                       
                       {dayData.event && (
@@ -435,7 +400,7 @@ export default function Events() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-pink-500 to-rose-600 text-white font-fugaz text-lg px-8 py-4 rounded-full hover:from-pink-600 hover:to-rose-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
-                  <span>🎉</span>
+                  <span aria-hidden="true">🪩🎟️</span>
                   <span>Get Party Tickets</span>
                 </a>
               </div>

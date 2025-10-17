@@ -322,6 +322,20 @@ export default function Pamilyas() {
               Ading Form
             </a>
 
+            <a
+              href="https://forms.utdfsa.com/transfer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full max-w-[600px] lg:max-w-[933px] h-[60px] lg:h-[84px] rounded-[50px] flex items-center justify-center text-white font-fugaz text-2xl lg:text-[48px] hover:opacity-90 transition-opacity"
+              style={{
+                background: '#27688E',
+                boxShadow: '3px 4px 4px 0 rgba(0, 0, 0, 0.25)',
+                textShadow: '0 4px 4px rgba(0, 0, 0, 0.25)'
+              }}
+            >
+              Ading Transfer Form
+            </a>
+
             {/* Extra CTA */}
             <div className="text-center mt-2">
               <p className="text-white font-gabarito opacity-90 mb-3" style={{ textShadow: '3px 4px 4px rgba(0,0,0,0.25)' }}>

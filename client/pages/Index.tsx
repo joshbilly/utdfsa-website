@@ -249,7 +249,7 @@ export default function Index() {
                 NEWSLETTERS
               </Link>
               <a
-                href="https://www.canva.com/design/DAGxII-puNw/tiTUFLkhr3NcpcMN7ojbmw/view?utm_content=DAGxII-puNw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc71e5517b7"
+                href="https://www.canva.com/design/DAG2ANY19q4/qlb1vIiYapnzM1mv-KoM4g/view?utm_content=DAG2ANY19q4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=had3a1d73a2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white font-fugaz text-lg lg:text-[28px] text-center underline drop-shadow-lg hover:opacity-80 transition-opacity"
