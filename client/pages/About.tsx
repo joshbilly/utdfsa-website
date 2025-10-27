@@ -76,11 +76,6 @@ export default function About() {
       image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F8bce04fb12894e10a5dcbb620bdeb872?format=webp&width=800"
     },
     {
-      name: "Cianna Rodriguez",
-      title: "Modern Director",
-      image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F7ee213f34df042a68e68fc16f0ca3d26?format=webp&width=800"
-    },
-    {
       name: "Simon Choi",
       title: "Philanthropy Chair",
       image: "https://cdn.builder.io/api/v1/image/assets%2Fc69a04683e834560a2043833f655482b%2F285c5947f165436d9ec3e50b23d12e2c?format=webp&width=800"

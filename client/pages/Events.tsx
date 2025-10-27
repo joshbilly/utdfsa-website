@@ -122,7 +122,7 @@ export default function Events() {
 
   const monthTitle = useMemo(() => {
     return new Date(YEAR, MONTH_INDEX, 1).toLocaleString(undefined, { month: "long" }).toUpperCase();
-  }, []);
+  }, [YEAR, MONTH_INDEX]);
 
   return (
     <div
@@ -268,7 +268,7 @@ export default function Events() {
                   textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
                 }}
               >
-                🎉 Swagapino Party - September 12th
+                🎉 wtf are you wearing - November 7th
               </h2>
               <p
                 className="text-white font-gabarito text-base lg:text-[18px] mb-6 leading-relaxed"
@@ -279,7 +279,7 @@ export default function Events() {
                 The biggest FSA party of the semester! Don't miss out on an unforgettable night of music, dancing, and amazing vibes.
               </p>
               <a
-                href="https://party.utdfsa.com/"
+                href="https://party.utdfsa.com/events/utdfsa/1923915"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-fugaz text-lg lg:text-xl px-8 py-4 rounded-full hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -395,7 +395,7 @@ export default function Events() {
                   <span>Join FSA Now</span>
                 </Link>
                 <a
-                  href="https://party.utdfsa.com/"
+                  href="https://party.utdfsa.com/events/utdfsa/1923915"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-pink-500 to-rose-600 text-white font-fugaz text-lg px-8 py-4 rounded-full hover:from-pink-600 hover:to-rose-700 transition-all duration-300 transform hover:scale-105 shadow-lg"

@@ -241,7 +241,7 @@ export default function Faq() {
     <div className="space-y-6">
       <div>
         <p className="font-bold underline mb-2">How do I buy party tickets?</p>
-        <p>Purchase tickets online at <a href="https://party.utdfsa.com/" target="_blank" rel="noopener noreferrer" className="underline">party.utdfsa.com</a>. Buy early—popular events sell out.</p>
+        <p>Purchase tickets online at <a href="https://party.utdfsa.com/events/utdfsa/1923915" target="_blank" rel="noopener noreferrer" className="underline">party.utdfsa.com</a>. Buy early—popular events sell out.</p>
       </div>
       <div>
         <p className="font-bold underline mb-2">Do I need to register for events?</p>
@@ -392,7 +392,7 @@ export default function Faq() {
                 <span>📅</span>
                 <span>Events Calendar</span>
               </Link>
-              <a href="https://party.utdfsa.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-fugaz px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 transition">
+              <a href="https://party.utdfsa.com/events/utdfsa/1923915" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-fugaz px-6 py-3 rounded-full border border-white/20 hover:bg-white/20 transition">
                 <span>🎫</span>
                 <span>Buy Party Tickets</span>
               </a>
