@@ -268,7 +268,7 @@ export default function Events() {
                   textShadow: '3px 4px 4px rgba(0, 0, 0, 0.25)'
                 }}
               >
-                🎉 wtf are you wearing - November 7th
+                🎉 wtf are you wearing - November 8th
               </h2>
               <p
                 className="text-white font-gabarito text-base lg:text-[18px] mb-6 leading-relaxed"
